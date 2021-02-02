@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function sum(x, y) {
+                return parseInt(x) + parseInt(y);
+            }
+
+            function sub(x, y) {
+                return parseInt(x) - parseInt(y);
+            }
+
+            function mul(x, y) {
+                return parseInt(x) * parseInt(y);
+            }
+
+            function div(x, y) {
+                return parseInt(x) / parseInt(y);
+            }
+
+            var x = parseInt(prompt("X"));
+            var y = parseInt(prompt("Y"));
+            document.write("sum(" + x + ", " + y + ") returns " + sum(x, y) + "<br>");
+            document.write("sub(" + x + ", " + y + ") returns " + sub(x, y) + "<br>");
+            document.write("mul(" + x + ", " + y + ") returns " + mul(x, y) + "<br>");
+            document.write("div(" + x + ", " + y + ") returns " + div(x, y) + "<br>");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

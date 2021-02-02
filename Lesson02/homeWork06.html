@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function sum(x, y) {
+                return parseInt(x) + parseInt(y);
+            }
+
+            function sub(x, y) {
+                return parseInt(x) - parseInt(y);
+            }
+
+            function mul(x, y) {
+                return parseInt(x) * parseInt(y);
+            }
+
+            function div(x, y) {
+                return parseInt(x) / parseInt(y);
+            }
+
+            function mathOperation(arg1, arg2, operation) {
+                switch (operation) {
+                    case "+":
+                        return sum(arg1, arg2);
+                    case "-":
+                        return sub(arg1, arg2);
+                    case "*":
+                        return mul(arg1, arg2);
+                    case "/":
+                        return div(arg1, arg2);
+                }
+            }
+
+            var x = parseInt(prompt("X"));
+            var y = parseInt(prompt("Y"));
+            var operation = prompt("Введите знак операции: ");
+            document.write("mathOperation(" + x + ", " + y + ", " + operation + ") returns " + mathOperation(x, y, operation) + "<br>");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
